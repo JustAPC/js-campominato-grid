@@ -2,15 +2,18 @@ let grid = document.getElementById("grid");
 
 let btn = document.getElementById("bottone");
 
+let difficoltà = 0;
+
 btn.addEventListener ('click', function (){
-    console.log(document.getElementById("difficulty").value);
+    let difficoltà = document.getElementById("difficulty").value;
+    console.log (difficoltà)
 })
 
-let numeroBox = 100;
+if (difficoltà == 1) {
+    let numeroBox = 100;
+    generatoreBox (numeroBox)
 
-generatoreBox (numeroBox)
-
-
+}
 
 
 
